@@ -1,6 +1,6 @@
 <div class="footer_bg1">
 <div class="wrap">
-	<div class="footer">CASA MUEBLES
+	<div class="footer">SHOPPERS: VIRTUAL SHOPPING MALL
 		<!-- scroll_top_btn -->
 	    <script type="text/javascript">
 			$(document).ready(function() {

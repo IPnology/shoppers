@@ -19,7 +19,7 @@ else
 			<?php
 			if (!isset($username)){
 			?>
-			<div>
+			<div class="signuptext">
 				<a href="../../user/account">Login</a> |
 				<a href="../../user/account/?view=register">Sign up</a>
 			</div>
@@ -53,9 +53,9 @@ else
 <div class="wrap">
 	<div class="header_sub">
 		<div class="h_menu">
-			<ul>
-				<li class="active"><a href="../../user/home">Home</a></li> |
-				<li><a href="../../user/shop">my shop</a></li> |
+			<ul id="navigation">
+				<li><a href="../../user/home">Home</a></li> |
+				<li><a href="../../user/shop" class="active">my shop</a></li> |
 				<li><a href="../../user/category">category</a></li> |
 				<li><a href="../../user/product">product</a></li> |
 				<li><a href="../../user/wishlist">wishlist</a></li> |
