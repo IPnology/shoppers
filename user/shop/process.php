@@ -6,10 +6,6 @@ $action = $_GET['action'];
 	
 switch ($action) {
     
-	case 'login' :
-		login();
-		break;
-
 	case 'add' :
 		add();
 		break;
@@ -23,31 +19,6 @@ switch ($action) {
 		break;
 	
 	default :
-}
-
-
-function login()
-{
-	// if we found an error save the error message in this variable
-	
-	$userName = $_POST['username'];
-	$password = $_POST['password'];
-	
-	$query = mysql_query("select * from user where username = '".$userName."' and password = '".$password."'");
-	
-	if (mysql_num_rows($query) != 0)
-	{
-
-		$_SESSION['user_session'] = $userName;
-		header('Location: ../home/');
-
-			
-	}
-	else
-	{
-		header('Location: index.php?error=User not found in the Database');
-	}
-	
 }
 
 function add()
@@ -65,17 +36,17 @@ function add()
 	$temp = explode(".", $_FILES["upload_file"]["name"]);
 	$newfilename = round(microtime(true)) . '.' . end($temp);
 	
-	mysql_query("insert into category set name='".$name."',
+	mysql_query("insert into shop set name='".$name."',
 											description='".$description."',
-											image='".$newfilename."'");
+											logo='".$newfilename."'");
 	
 	if(move_uploaded_file($_FILES['upload_file']['tmp_name'], "../../media/" . $newfilename)) {
 							
-	header('Location: ../category/');
+	header('Location: ../shop/?view=list&message=Successfully Added a Shop');
 	}
 	else{
 		
-	header('Location: ../category/?error=Not uploaded');
+	header('Location: ../shop/?error=Not uploaded');
 	}
 	
 }
@@ -84,9 +55,9 @@ function delete()
 {
 	$id = $_GET['id'];	
 	
-	mysql_query("delete from category where Id = '".$id."'");
+	mysql_query("delete from shop where Id = '".$id."'");
 	
-	header('Location: ../category/?view=list&message=Successfully Deleted.');
+	header('Location: ../shop/?view=list&message=Successfully Deleted.');
 	
 }
 
@@ -107,18 +78,18 @@ function update()
 	$temp = explode(".", $_FILES["upload_file"]["name"]);
 	$newfilename = round(microtime(true)) . '.' . end($temp);
 	
-	mysql_query("update category set name='".$name."',
+	mysql_query("update shop set name='".$name."',
 										description='".$description."',
-										image='".$newfilename."'
+										logo='".$newfilename."'
 										where Id = '".$id."'");
 												
 	if(move_uploaded_file($_FILES['upload_file']['tmp_name'], "../../media/" . $newfilename)) {
 							
-	header('Location: ../category/?view=list&message=Successfully Updated.');
+	header('Location: ../shop/?view=list&message=Successfully Updated.');
 	}
 	else{
 		
-	header('Location: ../category/?error=Not uploaded');
+	header('Location: ../shop/?error=Not uploaded');
 	}
 	
 }
