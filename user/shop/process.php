@@ -24,6 +24,7 @@ switch ($action) {
 function add()
 {
 	$name = $_POST['name'];
+	$owner = $_POST['owner'];
 	$description = $_POST['description'];
 	
 	// Where the file is going to be placed 
@@ -37,6 +38,7 @@ function add()
 	$newfilename = round(microtime(true)) . '.' . end($temp);
 	
 	mysql_query("insert into shop set name='".$name."',
+											owner = '".$owner."',
 											description='".$description."',
 											logo='".$newfilename."'");
 	

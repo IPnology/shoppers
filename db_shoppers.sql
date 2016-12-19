@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version 5.5.5-10.1.16-MariaDB)
-# Date: 2016-12-19 17:36:03
+# Date: 2016-12-19 18:11:45
 # Generator: MySQL-Front 5.4  (Build 1.40)
 
 /*!40101 SET NAMES utf8 */;
@@ -22,3 +22,4 @@ CREATE TABLE `shop` (
 # Data for table "shop"
 #
 
+INSERT INTO `shop` VALUES (2,'Penshop','shop for pens',NULL,'1482140632.png'),(4,'blackshop','123','dalelicious','1482142261.jpg');
