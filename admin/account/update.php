@@ -31,8 +31,8 @@ $row=mysql_fetch_array($query)
 	<select name="level" class="select" required>
 			<option value="<?=$row['level']?>"><?=$row['level']?></option>
 			<option value="admin">Admin</option>
-			<option value="staff">Staff</option>
-			<option value="delivery">Delivery</option>
+			<option value="seller">Seller</option>
+			<option value="customer">Customer</option>
 	</select>
 	</br></br>
 	
