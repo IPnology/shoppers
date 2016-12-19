@@ -1,7 +1,7 @@
 <!-- start slider -->
 			<div id="da-slider" class="da-slider">
 				<div class="da-slide">
-					<h2>welcome to Casa Muebles</h2>
+					<h2>welcome to Shoppers</h2>
 					<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
 					<a href="details.html" class="da-link">shop now</a>
 					<div class="da-img"><img src="../../include/images/slider1.png" alt="image01" /></div>

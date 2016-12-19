@@ -23,7 +23,7 @@
 		<div class="logo">
 		<ul>
 			<li><a href="../../admin/home"><img src="../../include/images/logo.png" alt=""/></a></li>
-			<li><div style="font-style:Arial; font-size: .75em; float:left; color: #fff;">CASA MUEBLES ADMINISTRATOR SIDE</div></li>
+			<li><div style="font-style:Arial; font-size: .75em; float:left; color: #fff;">SHOPPERS ADMINISTRATOR SIDE</div></li>
 		</ul>
 		</div>
 		<div class="h_search">

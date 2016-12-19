@@ -1,7 +1,7 @@
 <!-- start slider -->
 			<div id="da-slider" class="da-slider">
 				<div class="da-slide">
-					<h2>welcome to Casa Muebles</h2>
+					<h2>welcome to Shoppers</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 					<a href="details.html" class="da-link">shop now</a>
 					<div class="da-img"><img src="../../include/images/slider1.png" alt="image01" /></div>
