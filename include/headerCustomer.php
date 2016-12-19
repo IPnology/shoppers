@@ -55,10 +55,11 @@ else
 		<div class="h_menu">
 			<ul>
 				<li class="active"><a href="../../user/home">Home</a></li> |
+				<li><a href="../../user/shop">my shop</a></li> |
 				<li><a href="../../user/category">category</a></li> |
 				<li><a href="../../user/product">product</a></li> |
 				<li><a href="../../user/wishlist">wishlist</a></li> |
-				<li><a href="../../user/order">order</a></li>				
+				<li><a href="../../user/order">order</a></li> 			 			
 			</ul>
 		</div>
 		<div class="top-nav">
